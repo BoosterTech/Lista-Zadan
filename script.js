@@ -1,5 +1,5 @@
 {
-    const tasks = [];
+    const tasks = [{}];
 
     const init = () => {
         const form = document.querySelector(".js-addTaskForm");
