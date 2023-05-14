@@ -1,0 +1,14 @@
+.js-done {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(19, 145, 15);
+    border: 1px solid rgb(17, 129, 13);
+}
+
+.js-remove {
+    width: 35px;
+    height: 35px;
+    background-color: rgb(238, 69, 69);
+    border: 1px solid rgb(248, 53, 53);
+}
+

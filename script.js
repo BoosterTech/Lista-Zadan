@@ -32,9 +32,9 @@
         for (const task of tasks) {
             taskHtmlText += `
             <li class="tasksList__item" ${task.done ? "style=\"text-decoration: line-through\"" : ""}>
-            <button class="js-done">zrobione</button>
+            <button class="js-done"></button>
             ${task.content}
-            <button class="js-remove">usun</button>
+            <button class="js-remove">🗑️</button>
             </li>
             `;
         }
