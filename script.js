@@ -1,46 +1,55 @@
 {
-    const tasks = [];
+  const tasks = [];
 
-    const init = () => {
-        const form = document.querySelector(".js-addTaskForm");
+  const addNewTask = (newTaskContent) => {
+    tasks.push({
+      content: newTaskContent,
+    })
+    renderTasks();
+  }
 
-        form.addEventListener("submit", event => {
-            event.preventDefault();
+  const toggleTaskDone = (taskIndex) => {
+    tasks[taskIndex].done = !tasks[taskIndex].done;
+    renderTasks();
+  }
 
-            const newTaskContent = document.querySelector(".js-addTaskForm__input").value.trim();
+  const init = () => {
+    const form = document.querySelector('.js-addTaskForm')
 
-            if (newTaskContent === "") {
-                return;
-            }
-            addNewTask(newTaskContent)
+    form.addEventListener('submit', event => {
+      event.preventDefault();
 
-            console.log(newTaskContent);
+      const newTaskContent = document.querySelector('.js-addTaskForm__input').value.trim();
 
-        })
+      if (newTaskContent === '') {
+        return
+      }
+      addNewTask(newTaskContent);
+    });
+  }
+
+  const renderTasks = () => {
+    let taskHtmlText = '';
+
+    for (const task of tasks) {
+      taskHtmlText += `
+       <li class="tasksList__item">
+       <button class="js-taskDone"> ${task.done ? "✓" : ""} </button>
+       <span class="${task.done ? "task__content--done" : ""}"> ${task.content} </span>
+       <button class="js-remove">🗑️</button>
+       </li>
+     `
     }
+    document.querySelector('.js-tasksList').innerHTML = taskHtmlText;
 
-    const addNewTask = (newTaskContent) => {
-        tasks.push({
-            content: newTaskContent,
-        });
-        renderTasks();
-    }
+    const toggleDoneButtons = document.querySelectorAll(".js-taskDone");
 
-    const renderTasks = () => {
-        let taskHtmlText = "";
+    toggleDoneButtons.forEach((toggleTaskButton, taskIndex) => {
+      toggleTaskButton.addEventListener("click", () => {
+        toggleTaskDone(taskIndex);
+      });
+    });
+  }
 
-        for (const task of tasks) {
-            taskHtmlText += `
-            <li class="tasksList__item" ${task.done ? "style=\"text-decoration: line-through\"" : ""}>
-            <button class="js-done"></button>
-            ${task.content}
-            <button class="js-remove">🗑️</button>
-            </li>
-            `;
-        }
-
-        document.querySelector(".js-tasksList").innerHTML = taskHtmlText;
-    }
-
-    init();
+  init();
 }
