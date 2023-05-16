@@ -8,6 +8,11 @@
     renderTasks();
   }
 
+  const toggleRemoveTask = (taskIndex) => {
+    tasks.splice(taskIndex, 1);
+    renderTasks();
+  }
+
   const toggleTaskDone = (taskIndex) => {
     tasks[taskIndex].done = !tasks[taskIndex].done;
     renderTasks();
@@ -21,10 +26,9 @@
 
       const newTaskContent = document.querySelector('.js-addTaskForm__input').value.trim();
 
-      if (newTaskContent === '') {
-        return
+      if (newTaskContent !== '') {
+        addNewTask(newTaskContent);
       }
-      addNewTask(newTaskContent);
     });
   }
 
@@ -36,7 +40,7 @@
        <li class="tasksList__item">
        <button class="js-taskDone"> ${task.done ? "✓" : ""} </button>
        <span class="${task.done ? "task__content--done" : ""}"> ${task.content} </span>
-       <button class="js-remove">🗑️</button>
+       <button class="js-taskRemove">🗑️</button>
        </li>
      `
     }
@@ -47,6 +51,14 @@
     toggleDoneButtons.forEach((toggleTaskButton, taskIndex) => {
       toggleTaskButton.addEventListener("click", () => {
         toggleTaskDone(taskIndex);
+      });
+    });
+
+    const toggleRemoveButtons = document.querySelectorAll(".js-taskRemove");
+
+    toggleRemoveButtons.forEach((toggleDoneButton, Index) => {
+      toggleDoneButton.addEventListener("click", () => {
+        toggleRemoveTask(Index);
       });
     });
   }
