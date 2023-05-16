@@ -18,22 +18,25 @@
     renderTasks();
   }
 
-  const init = () => {
-    const form = document.querySelector('.js-addTaskForm');
+  const onFormSubmit = (event) => {
     const taskInputField = document.querySelector('.js-addTaskForm__input');
 
-    form.addEventListener('submit', event => {
-      event.preventDefault();
+    event.preventDefault();
 
-      const newTaskContent = document.querySelector('.js-addTaskForm__input').value.trim();
+    const newTaskContent = document.querySelector('.js-addTaskForm__input').value.trim();
 
-      if (newTaskContent !== '') {
-        addNewTask(newTaskContent);
-        taskInputField.value = "";
-      }
+    if (newTaskContent !== '') {
+      addNewTask(newTaskContent);
+      taskInputField.value = "";
+    }
 
-      taskInputField.focus();
-    });
+    taskInputField.focus();
+  };
+
+  const init = () => {
+    const form = document.querySelector('.js-taskForm');
+
+    form.addEventListener('submit', onFormSubmit);
   }
 
   const renderTasks = () => {

@@ -1,4 +1,4 @@
-.addTaskForm {
+.taskForm {
     display: grid;
     padding: 15px;
     grid-template-columns: 1fr auto;
