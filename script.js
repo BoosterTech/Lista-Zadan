@@ -19,7 +19,8 @@
   }
 
   const init = () => {
-    const form = document.querySelector('.js-addTaskForm')
+    const form = document.querySelector('.js-addTaskForm');
+    const taskInputField = document.querySelector('.js-addTaskForm__input');
 
     form.addEventListener('submit', event => {
       event.preventDefault();
@@ -28,7 +29,10 @@
 
       if (newTaskContent !== '') {
         addNewTask(newTaskContent);
+        taskInputField.value = "";
       }
+
+      taskInputField.focus();
     });
   }
 
