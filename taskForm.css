@@ -5,13 +5,13 @@
     gap: 20px;
 }
 
-.addTaskForm__input {
+.taskForm__input {
     padding: 10px;
     border: 1px solid rgb(221, 215, 215);
     font-size: 15px;
 }
 
-.addTaskForm__button {
+.taskForm__button {
     padding: 10px;
     background-color: rgb(21, 117, 117);
     color: white;
@@ -19,6 +19,6 @@
     font-size: 15px;
 }
 
-.addTaskForm__button:hover {
+.taskForm__button:hover {
     background-color: rgba(21, 117, 117, 0.884);
 }

@@ -19,11 +19,11 @@
   }
 
   const onFormSubmit = (event) => {
-    const taskInputField = document.querySelector('.js-addTaskForm__input');
+    const taskInputField = document.querySelector('.js-taskForm__input');
 
     event.preventDefault();
 
-    const newTaskContent = document.querySelector('.js-addTaskForm__input').value.trim();
+    const newTaskContent = document.querySelector('.js-taskForm__input').value.trim();
 
     if (newTaskContent !== '') {
       addNewTask(newTaskContent);
