@@ -5,7 +5,14 @@
     gap: 20px;
 }
 
+@media(max-width: 745px) {
+    .taskForm {
+        grid-template-columns: 1fr;
+    }
+}
+
 .taskForm__input {
+    min-width: 150px;
     padding: 10px;
     border: 1px solid rgb(221, 215, 215);
     font-size: 15px;
