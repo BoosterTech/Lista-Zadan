@@ -5,11 +5,21 @@
     border: 1px solid rgb(17, 129, 13);
 }
 
+.js-taskDone:active {
+    border: 1px solid black;
+    border-radius: 5%;
+}
+
 .js-taskRemove {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     background-color: rgb(238, 69, 69);
     border: 1px solid rgb(248, 53, 53);
+}
+
+.js-taskRemove:active {
+    border: 1px solid black;
+    border-radius: 5%;
 }
 
 .task__content--done {

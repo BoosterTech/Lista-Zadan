@@ -19,6 +19,7 @@
     font-size: 15px;
 }
 
-.taskForm__button:hover {
-    background-color: rgba(21, 117, 117, 0.884);
+.taskForm__button:active {
+    border: 1px solid black;
+    border-radius: 5%;
 }
