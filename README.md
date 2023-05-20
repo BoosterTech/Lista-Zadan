@@ -3,7 +3,7 @@
 ## Technologies used:
 - HTML, CSS, JavaScript (including "ECMAScript 6" features)
 - BEM
-### Demo:
+### Demo: https://boostertech.github.io/ListaZadan/
 
 ## Navigating the page
 1. By clicking "***Dodaj zadanie***" button one can add a task to tasks list ("Lista zadań") section:
