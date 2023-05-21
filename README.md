@@ -17,7 +17,7 @@ Narrow screen:
 
 ![addTaskGif](https://github.com/BoosterTech/ListaZadan/blob/main/images/addingTask.gif)
 
-2. By clicking "***green square***" button one can mark a task as "**done**":](https://github.com/BoosterTech/ListaZadan/blob/ca41ace2c5a283049dcb54181fe47d6be13ea67a/images/addingTask.gif)
+2. By clicking "***green square***" button one can mark a task as "**done**":
 
 ![markDoneGif](https://github.com/BoosterTech/ListaZadan/blob/main/images/markingTaskDone.gif)
 
