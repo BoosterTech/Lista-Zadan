@@ -23,7 +23,7 @@
 }
 
 .task__content{
-    overflow: auto;
+   word-break: break-word;
 }
 
 .task__content--done {
