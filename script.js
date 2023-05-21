@@ -46,7 +46,7 @@
       taskHtmlText += `
        <li class="tasksList__item">
        <button class="js-taskDone"> ${task.done ? "✓" : ""} </button>
-       <span class="${task.done ? "task__content--done" : ""}"> ${task.content} </span>
+       <span class="task__content ${task.done ? "task__content--done" : ""}"> ${task.content} </span>
        <button class="js-taskRemove">🗑️</button>
        </li>
      `

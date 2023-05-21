@@ -22,6 +22,10 @@
     border-radius: 5%;
 }
 
+.task__content{
+    overflow: auto;
+}
+
 .task__content--done {
     text-decoration: line-through;
 }
