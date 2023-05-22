@@ -12,3 +12,10 @@
     gap: 10px;
     align-items: center;
 }
+
+@media(max-width:500px) {
+    .tasksList__item {
+        display:flex;
+        flex-direction: column;
+    }
+}
