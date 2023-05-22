@@ -30,3 +30,20 @@
     border: 1px solid black;
     border-radius: 5%;
 }
+
+@media(max-width:500px) {
+    .taskForm__input {
+        min-width: 50px;
+        padding: 5px;
+        border: 1px solid rgb(221, 215, 215);
+        font-size: 10px;
+    }
+    
+    .taskForm__button {
+        padding: 5px;
+        background-color: rgb(21, 117, 117);
+        color: white;
+        border: 1px solid rgb(9, 99, 99);
+        font-size: 10px;
+    }
+}
