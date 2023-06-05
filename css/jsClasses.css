@@ -1,31 +1,31 @@
-.js-taskDone {
+.taskDone {
     width: 30px;
     height: 30px;
     background-color: rgb(19, 145, 15);
     border: 1px solid rgb(17, 129, 13);
 }
 
-.js-taskDone:active {
+.taskDone:active {
     border: 1px solid black;
     border-radius: 5%;
 }
 
-.js-taskRemove {
+.taskRemove {
     width: 30px;
     height: 30px;
     background-color: rgb(238, 69, 69);
     border: 1px solid rgb(248, 53, 53);
 }
 
-.js-taskRemove:active {
+.taskRemove:active {
     border: 1px solid black;
     border-radius: 5%;
 }
 
-.task__content{
+.taskContent{
    word-break: break-word;
 }
 
-.task__content--done {
+.taskContent--done {
     text-decoration: line-through;
 }

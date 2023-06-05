@@ -19,11 +19,10 @@
   }
 
   const onFormSubmit = (event) => {
-    const taskInputField = document.querySelector('.js-taskForm__input');
-
     event.preventDefault();
 
-    const newTaskContent = document.querySelector('.js-taskForm__input').value.trim();
+    const taskInputField = document.querySelector('.js-taskFormInput');
+    const newTaskContent = document.querySelector('.js-taskFormInput').value.trim();
 
     if (newTaskContent !== '') {
       addNewTask(newTaskContent);
@@ -45,15 +44,15 @@
     for (const task of tasks) {
       taskHtmlText += `
        <li class="tasksList__item">
-       <button class="js-taskDone"> ${task.done ? "✓" : ""} </button>
-       <span class="task__content ${task.done ? "task__content--done" : ""}"> ${task.content} </span>
-       <button class="js-taskRemove">🗑️</button>
+        <button class="taskDone"> ${task.done ? "✓" : ""} </button>
+        <span class="taskContent ${task.done ? "taskContent--done" : ""}"> ${task.content} </span>
+        <button class="taskRemove">🗑️</button>
        </li>
      `
     }
     document.querySelector('.js-tasksList').innerHTML = taskHtmlText;
 
-    const toggleDoneButtons = document.querySelectorAll(".js-taskDone");
+    const toggleDoneButtons = document.querySelectorAll(".taskDone");
 
     toggleDoneButtons.forEach((toggleTaskButton, taskIndex) => {
       toggleTaskButton.addEventListener("click", () => {
@@ -61,7 +60,7 @@
       });
     });
 
-    const toggleRemoveButtons = document.querySelectorAll(".js-taskRemove");
+    const toggleRemoveButtons = document.querySelectorAll(".taskRemove");
 
     toggleRemoveButtons.forEach((toggleDoneButton, Index) => {
       toggleDoneButton.addEventListener("click", () => {
