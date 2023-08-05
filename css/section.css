@@ -32,11 +32,11 @@
     transition: .3s;
 }
 
-.buttons:hover{
-    color:rgba(92, 89, 89, 0.664); ;
+.buttons:hover {
+    color: rgba(92, 89, 89, 0.664);
 }
 
-.buttons:disabled{
+.buttons:disabled {
     color: rgb(182, 176, 176);
 }
 
