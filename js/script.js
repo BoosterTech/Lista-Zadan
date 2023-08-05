@@ -94,8 +94,8 @@ const renderBtns = () => {
   };
 
   buttonsElement.innerHTML = `
-     <button class = "js-showHideTasksBtn  buttons__showHideTasks" ${!(tasks.some(isDone)) ? "disabled" : ""}> ${hideDoneTasksVar ? "Pokaż" : "Ukryj"} zrobione </button> 
-     <button class = "js-markAllDoneBtn buttons__markAllDone"  ${tasks.every(isDone) ? "disabled" : ""}> Ukończ wszystkie </button> 
+     <button class = "js-showHideTasksBtn  buttons" ${!(tasks.some(isDone)) ? "disabled" : ""}> ${hideDoneTasksVar ? "Pokaż" : "Ukryj"} ukończone </button> 
+     <button class = "js-markAllDoneBtn buttons"  ${tasks.every(isDone) ? "disabled" : ""}> Ukończ wszystkie </button> 
     `
 }
 

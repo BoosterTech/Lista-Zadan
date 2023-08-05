@@ -13,6 +13,51 @@
     align-items: center;
 }
 
+.taskDone {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(19, 145, 15);
+    border: 1px solid rgb(17, 129, 13);
+    transition: .3s;
+}
+
+.taskDone:active {
+    border: 1px solid black;
+    border-radius: 5%;
+}
+
+.taskDone:hover{
+    background-color: rgba(19, 145, 15, 0.849);
+}
+
+.taskRemove {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(238, 69, 69);
+    border: 1px solid rgb(248, 53, 53);
+    transition: .3s;
+}
+
+.taskRemove:active {
+    border: 1px solid black;
+    border-radius: 5%;
+}
+.taskRemove:hover{
+    background-color: rgba(238, 69, 69, 0.863);
+}
+
+.taskContent {
+    word-break: break-word;
+}
+
+.taskContent--done {
+    text-decoration: line-through;
+}
+
+.tasksList__item--hidden{
+    display: none;
+}
+
 @media(max-width:275px) {
     .tasksList__item {
         display:flex;

@@ -17,7 +17,7 @@
     border-bottom: 1px solid rgb(221, 215, 215);
 }
 
-.buttons {
+.section__buttons {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -26,10 +26,23 @@
     margin-right: 15px;
 }
 
+.buttons {
+    color: rgb(92, 89, 89);
+    border: none;
+    transition: .3s;
+}
+
+.buttons:hover{
+    color:rgba(92, 89, 89, 0.664); ;
+}
+
+.buttons:disabled{
+    color: rgb(182, 176, 176);
+}
+
 @media(max-width: 768px) {
     .section__header {
         border: none;
-        text-align: center;
     }
 
     .section--flex {
@@ -37,13 +50,13 @@
         justify-items: center;
     }
 
-    .buttons {
+    .section__buttons {
         flex-direction: column;
         margin-right: 0;
         margin-bottom: 10px;
     }
 
-    .buttons__showHideTasks {
+    .buttons {
         width: 121px;
         max-width: 121px;
     }
