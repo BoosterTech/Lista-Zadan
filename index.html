@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/section.css">
+    <link rel="stylesheet" href="css/taskForm.css">
+    <link rel="stylesheet" href="css/tasksList.css">
+    <link rel="stylesheet" href="css/jsClasses.css">
+    <link rel="icon" href="images/icon.jpg">
+
+    <script defer src="js/script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <title>Lista zadań</title>
+
+    <meta property="og:image" content="https://github.com/BoosterTech/ListaZadan/blob/main/images/openGraph.png">
+    <meta property="og:title" content="Lista Zadan" />
+</head>
+
+<body>
+    <header>
+        <h1>Lista zadań</h1>
+    </header>
+
+    <section class="section">
+        <h2 class="section__header">Dodaj nowe zadanie</h2>
+        <form class="taskForm js-taskForm">
+            <input class="taskForm__input js-taskFormInput" type="text" placeholder="Co jest do zrobienia?">
+            <button class="taskForm__button">Dodaj zadanie</button>
+        </form>
+    </section>
+
+    <section class="section">
+        <div class="section--flex">
+            <h2 class="section__header">Lista zadań</h2>
+            <span class="js-buttons buttons"></span>
+        </div>
+        <ul class="tasksList js-tasksList"> </ul>
+    </section>
+</body>
+</html>

@@ -1,0 +1,35 @@
+.taskDone {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(19, 145, 15);
+    border: 1px solid rgb(17, 129, 13);
+}
+
+.taskDone:active {
+    border: 1px solid black;
+    border-radius: 5%;
+}
+
+.taskRemove {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(238, 69, 69);
+    border: 1px solid rgb(248, 53, 53);
+}
+
+.taskRemove:active {
+    border: 1px solid black;
+    border-radius: 5%;
+}
+
+.taskContent {
+    word-break: break-word;
+}
+
+.taskContent--done {
+    text-decoration: line-through;
+}
+
+.tasksList__item--hidden{
+    display: none;
+}

@@ -1,0 +1,21 @@
+.tasksList {
+    padding: 0 35px;
+    margin: 0;
+    list-style: none;
+}
+
+.tasksList__item {
+    display: grid;
+    padding: 10px;
+    border-bottom: 1px solid rgb(221, 215, 215);
+    grid-template-columns: auto 1fr auto;
+    gap: 10px;
+    align-items: center;
+}
+
+@media(max-width:275px) {
+    .tasksList__item {
+        display:flex;
+        flex-direction: column;
+    }
+}
