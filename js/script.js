@@ -85,7 +85,7 @@ const bindButtonsEvents = () => {
   }
 }
 
-const renderBtns = () => {
+const renderButtons = () => {
   const buttonsElement = document.querySelector(".js-buttons");
 
   if (!tasks.length) {
@@ -104,7 +104,7 @@ const render = () => {
   bindRemoveEvents();
   bindToggleDoneEvents();
 
-  renderBtns();
+  renderButtons();
   bindButtonsEvents();
 };
 
