@@ -58,9 +58,15 @@
     display: none;
 }
 
-@media(max-width:275px) {
-    .tasksList__item {
-        display:flex;
-        flex-direction: column;
+.tasksList {
+    padding: 0 35px;
+    margin: 0;
+    list-style: none;
+}
+
+@media(max-width: 768px) {
+    .tasksList {
+        padding: 0 3px;
+        ;
     }
 }
